@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de registro simples em HTML semântico, seguindo boas práticas">
+    <meta name="author" content="Paulo Henrique">
+    <title>Página de Registro</title>
+</head>
+<body>
+
+    <main>
+
+        <img src="img/logo_ecenture.png" alt="Logo da Ecenture Tecnologia" width="200">
+
+        <h1 id="titulo-registro">Registro</h1>
+
+        <form aria-labelledby="titulo-registro">
+
+            <!-- Nome -->
+            <div class="campo">
+                <label for="name">Nome:</label>
+                <input type="text" name="nome" id="name" placeholder="Digite seu nome" autocomplete="name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="email" required>
+            </div>
+
+            <!-- Telefone -->
+            <div class="campo">
+                <label for="phone">Telefone:</label>
+                <input type="tel" name="telefone" id="phone" placeholder="Digite seu telefone" autocomplete="tel" required>
+            </div>
+
+            <!-- CPF -->
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}" title="Digite no formato: 000.000.000-00" required>
+            </div>
+
+            <!-- Senha -->
+            <div class="campo">
+                <label for="password">Senha:</label>
+                <input type="password" name="senha" id="password" placeholder="Digite sua senha" autocomplete="new-password" required>
+            </div>
+
+            <!-- Registro -->
+            <button type="submit">Registrar</button>
+
+        </form>
+
+        <a href="login.html" aria-label="Já tem conta? Voltar para o login">Ir para página de login</a>
+    </main>
+
+</body>
+</html>
