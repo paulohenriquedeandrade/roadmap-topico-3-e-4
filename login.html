@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de login simples em HTML semântico, seguindo boas práticas">
+    <meta name="author" content="Paulo Henrique">
+    <title>Página de Login</title>
+</head>
+<body>
+
+    <main>
+
+        <img src="#" alt="Logo de login" width="300">
+
+        <h1 id="titulo-login">Login</h1>
+
+        <form aria-labelledby="titulo-login">
+
+            <div class="user">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="email" required>
+            </div>
+
+            <div class="password">
+                <label for="password">Senha:</label>
+                <input type="password" name="senha" id="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+            </div>
+
+            <button class="botao" type="submit">Entrar</button>
+
+        </form>
+
+        <a href="registro.html" aria-label="Ainda não tem conta? Criar nova conta">Ir para o registro</a>
+
+    </main>
+
+</body>
+</html>
